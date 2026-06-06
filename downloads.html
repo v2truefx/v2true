@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prevents browser caching glitches -->
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+
     <title>v2true | Hub</title>
-    <!-- Loads clean, premium icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
@@ -24,7 +29,7 @@
         }
         .container {
             width: 100%;
-            max-width: 550px; /* Shrunk width to fix ugly grey/black spaces */
+            max-width: 550px;
             animation: fadeIn 0.8s ease;
         }
         .header {
@@ -69,7 +74,7 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: 1fr; /* Compacted into single sleek column format */
+            grid-template-columns: 1fr;
             gap: 15px;
         }
         .card {
@@ -166,7 +171,6 @@
         <h2 class="section-title"><i class="fa-solid fa-circle-nodes"></i> Support & Connect</h2>
         <div class="grid">
             
-            <!-- Direct Profile DM -->
             <div class="card">
                 <div class="card-info">
                     <h3>Direct DM Support</h3>
@@ -175,7 +179,6 @@
                 <a href="https://discord.com" target="_blank" class="btn-action support-link"><i class="fa-solid fa-comment"></i> DM @v2trueh7ven</a>
             </div>
 
-            <!-- New Server Card Placeholder -->
             <div class="card">
                 <div class="card-info">
                     <h3>Vogue Discord Server</h3>
