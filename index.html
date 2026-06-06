@@ -51,7 +51,16 @@
             display: block;
             transition: all 0.25s ease;
         }
-        /* TikTok Button */
+        /* Roblox */
+        .roblox {
+            background: #ffffff;
+            color: #000000;
+        }
+        .roblox:hover {
+            background: #e0e0e0;
+            transform: scale(1.05);
+        }
+        /* TikTok */
         .tiktok {
             background: #000000;
             border: 2px solid #FE2C55;
@@ -61,7 +70,7 @@
             background: #FE2C55;
             transform: scale(1.05);
         }
-        /* Discord Button */
+        /* Discord */
         .discord {
             background: #5865F2;
             color: #ffffff;
@@ -70,20 +79,22 @@
             background: #4752C4;
             transform: scale(1.05);
         }
+        /* Downloads Page Link */
+        .downloads-btn {
+            background: linear-gradient(135deg, #8a2be2, #4b0082);
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .downloads-btn:hover {
+            filter: brightness(1.2);
+            transform: scale(1.05);
+        }
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         @media (max-width: 500px) {
-            h1 {
-                font-size: 2rem;
-            }
+            h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -94,9 +105,10 @@
         <p>After Effects Editor & Roblox Creator</p>
         
         <div class="links-container">
-            <!-- REPLACE THE LINKS BELOW WITH YOUR REAL ONES -->
-            <a href="https://tiktok.com" target="_blank" class="btn tiktok">Follow my TikTok</a>
-            <a href="https://discord.gg" target="_blank" class="btn discord">Join the Discord Server</a>
+            <a href="https://www.roblox.com/users/7772527230/profile" target="_blank" class="btn roblox">My Roblox Profile</a>
+            <a href="https://www.tiktok.com/@v2trueh7vn?_r=1&_t=ZT-96yF2zC6qU9" target="_blank" class="btn tiktok">Follow my TikTok</a>
+            <a href="https://discord.gg/4TP3AQcXw" target="_blank" class="btn discord">Join the Discord Server</a>
+            <a href="downloads.html" class="btn downloads-btn">🎬 AE Presets & Tutorials</a>
         </div>
     </div>
 
