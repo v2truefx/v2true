@@ -10,8 +10,9 @@
     <meta http-equiv="pragma" content="no-cache" />
 
     <title>v2true | Hub</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+    <!-- Loads clean, premium icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
     <style>
         * {
             margin: 0;
@@ -30,7 +31,7 @@
         }
         .container {
             width: 100%;
-            max-width: 550px;
+            max-width: 550px; /* Shrunk width to fix ugly grey/black spaces */
             animation: fadeIn 0.8s ease;
         }
         .header {
@@ -156,7 +157,20 @@
             </div>
         </div>
 
-        <!-- SECTION 2: YOUTUBE TUTORIALS -->
+        <!-- PLACED EXACTLY BELOW PRESETS & ABOVE TUTORIALS -->
+        <!-- SECTION 2: EDITING SOFTWARES & PLUGINS -->
+        <h2 class="section-title"><i class="fa-solid fa-plug"></i> Software Architecture</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-info">
+                    <h3>Editing Softwares / Plugins</h3>
+                    <p>Direct down-line pipelines for core software configurations and master company plugin bundles.</p>
+                </div>
+                <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
+            </div>
+        </div>
+
+        <!-- SECTION 3: YOUTUBE TUTORIALS -->
         <h2 class="section-title"><i class="fa-brands fa-youtube"></i> Video Guides</h2>
         <div class="grid">
             <div class="card">
@@ -168,18 +182,20 @@
             </div>
         </div>
 
-        <!-- SECTION 3: SUPPORT & COMMUNITY -->
+        <!-- SECTION 4: SUPPORT & COMMUNITY -->
         <h2 class="section-title"><i class="fa-solid fa-circle-nodes"></i> Support & Connect</h2>
         <div class="grid">
             
+            <!-- Direct Profile DM -->
             <div class="card">
                 <div class="card-info">
                     <h3>Direct DM Support</h3>
                     <p>Have questions? Reach out directly via personal text dashboard layout lines.</p>
                 </div>
-                <a href="https://discord.com/users/1329633846081097810" target="_blank" class="btn-action support-link"><i class="fa-solid fa-comment"></i> DM @v2trueh7ven</a>
+                <a href="https://discord.com" target="_blank" class="btn-action support-link"><i class="fa-solid fa-comment"></i> DM @v2trueh7ven</a>
             </div>
 
+            <!-- New Server Card Placeholder -->
             <div class="card">
                 <div class="card-info">
                     <h3>Vogue Discord Server</h3>
