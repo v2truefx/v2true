@@ -14,15 +14,14 @@
 
 body {
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
-    color: #fff;
-    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
-/* container */
 .profile-container {
     text-align: center;
     width: 100%;
@@ -35,18 +34,16 @@ body {
     animation: fadeIn 1s ease;
 }
 
-/* text */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 8px;
 }
 
 p {
-    color: #aaa;
+    color: #aaaaaa;
     margin-bottom: 25px;
 }
 
-/* buttons */
 .links-container {
     display: flex;
     flex-direction: column;
@@ -58,15 +55,17 @@ p {
     border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.25s;
     display: block;
+    transition: all 0.25s ease;
 }
 
 /* TikTok */
 .tiktok {
-    background: black;
+    background: #000000;
     border: 2px solid #FE2C55;
+    color: #ffffff;
 }
+
 .tiktok:hover {
     background: #FE2C55;
     transform: scale(1.05);
@@ -75,13 +74,14 @@ p {
 /* Discord */
 .discord {
     background: #5865F2;
+    color: #ffffff;
 }
+
 .discord:hover {
     background: #4752C4;
     transform: scale(1.05);
 }
 
-/* animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -93,7 +93,6 @@ p {
     }
 }
 
-/* mobile fix */
 @media (max-width: 500px) {
     h1 {
         font-size: 2rem;
@@ -109,11 +108,11 @@ p {
     <p>After Effects Editor & Roblox Creator</p>
 
     <div class="links-container">
-        <a href="https://tiktok.com/@YOURUSERNAME" target="_blank" class="btn tiktok">
+        <a href="https://tiktok.com/@yourusername" target="_blank" class="btn tiktok">
             Follow my TikTok
         </a>
 
-        <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn discord">
+        <a href="https://discord.gg/yourinvite" target="_blank" class="btn discord">
             Join the Discord Server
         </a>
     </div>
