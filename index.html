@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prevents browser caching glitches -->
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    
     <title>v2true | Portfolio</title>
-    <!-- Loads clean, premium icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
@@ -13,10 +18,9 @@
             box-sizing: border-box;
         }
         body {
-            /* Vogue Inspired Premium Dark Gold Gradient Background */
             background: linear-gradient(135deg, #070707, #1c1712, #0d0b09);
             color: #ffffff;
-            font-family: "Cinzel", "Segoe UI", -apple-system, sans-serif;
+            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -29,7 +33,6 @@
             max-width: 400px;
             padding: 35px 25px;
             border-radius: 24px;
-            /* Sleek luxury border glow */
             background: rgba(15, 13, 11, 0.75);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(212, 175, 55, 0.15);
@@ -38,7 +41,7 @@
         }
         .avatar-icon {
             font-size: 3rem;
-            color: #d4af37; /* Luxury Gold */
+            color: #d4af37;
             margin-bottom: 15px;
             filter: drop-shadow(0 0 10px rgba(212,175,55,0.3));
         }
@@ -52,7 +55,7 @@
             -webkit-text-fill-color: transparent;
         }
         p {
-            color: #bfae99; /* Soft Champagne Gray */
+            color: #bfae99;
             font-size: 0.95rem;
             margin-bottom: 30px;
             letter-spacing: 1px;
@@ -71,10 +74,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px; /* Spaces icon away from text */
+            gap: 12px;
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
-        /* Vogue Roblox */
         .roblox {
             background: #ffffff;
             color: #000000;
@@ -85,7 +87,6 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(212,175,55,0.3);
         }
-        /* Vogue TikTok */
         .tiktok {
             background: #000000;
             border: 1px solid #ffffff;
@@ -97,7 +98,6 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(255,255,255,0.2);
         }
-        /* Vogue Discord */
         .discord {
             background: #111111;
             border: 1px solid #d4af37;
@@ -109,7 +109,6 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(212,175,55,0.4);
         }
-        /* Vogue Hub Button */
         .downloads-btn {
             background: linear-gradient(135deg, #d4af37, #997300);
             color: #000000;
@@ -129,7 +128,6 @@
 <body>
 
     <div class="profile-container">
-        <!-- Luxury Diamond Crown Brand Icon -->
         <div class="avatar-icon"><i class="fa-solid fa-crown"></i></div>
         <h1>v2true</h1>
         <p>After Effects Editor & Roblox Creator</p>
