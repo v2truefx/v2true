@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v2true | Downloads & Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: #ffffff;
+            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 700px;
+            animation: fadeIn 0.8s ease;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .back-link {
+            color: #aaaaaa;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: color 0.2s;
+        }
+        .back-link:hover {
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff007f, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin: 35px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+            color: #f0f0f0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #8a2be2;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .card p {
+            color: #aaaaaa;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        .btn-action {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+        .download-link {
+            background: #8a2be2;
+            color: #ffffff;
+        }
+        .download-link:hover {
+            background: #7315ca;
+        }
+        .watch-link {
+            background: #ff0000;
+            color: #ffffff;
+        }
+        .watch-link:hover {
+            background: #cc0000;
+        }
+        .support-link {
+            background: #5865F2;
+            color: #ffffff;
+        }
+        .support-link:hover {
+            background: #4752C4;
+        }
+        .coming-soon {
+            background: rgba(255,255,255,0.1);
+            color: #888888;
+            border: 1px dashed rgba(255,255,255,0.2);
+            cursor: not-allowed;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Links</a>
+            <h1>v2true Hub</h1>
+            <p>Grab custom assets, view guides, or get direct help</p>
+        </div>
+
+        <!-- SECTION 1: AFTER EFFECTS PRESETS -->
+        <h2 class="section-title">✨ After Effects Presets</h2>
+        <div class="grid">
+            
+            <!-- Preset Item 1 -->
+            <div class="card">
+                <div>
+                    <h3>Edge Rays Text Effect</h3>
+                    <p>Clean glowing edge rays look perfect for high-impact edits and crisp motion graphics.</p>
+                </div>
+                <!-- Swap # with your Mega link when you are ready -->
+                <a href="#" target="_blank" class="btn-action download-link">Download Preset</a>
+            </div>
+
+            <!-- Preset Coming Soon -->
+            <div class="card">
+                <div>
+                    <h3>More Presets</h3>
+                    <p>New custom effects, transitions, and editing presets are currently being cooked up.</p>
+                </div>
+                <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
+            </div>
+
+        </div>
+
+        <!-- SECTION 2: YOUTUBE TUTORIALS -->
+        <h2 class="section-title">📺 Video Tutorials</h2>
+        <div class="grid">
+            
+            <!-- Tutorials Coming Soon -->
+            <div class="card">
+                <div>
+                    <h3>Text Effect Breakdown</h3>
+                    <p>A step-by-step video guide explaining exactly how to style and use the Edge Rays preset.</p>
+                </div>
+                <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Editing Workflows</h3>
+                    <p>Future video tutorials covering advanced After Effects and Roblox creation strategies.</p>
+                </div>
+                <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
+            </div>
+
+        </div>
+
+        <!-- SECTION 3: SUPPORT -->
+        <h2 class="section-title">💬 Direct Support</h2>
+        <div class="grid">
+            
+            <!-- Support Contact Card -->
+            <div class="card">
+                <div>
+                    <h3>Need Editing Help?</h3>
+                    <p>Having trouble setting up a preset? Add me on Discord to drop a question directly in my DMs.</p>
+                </div>
+                <!-- Opens Discord App or Web client -->
+                <a href="https://discord.com" target="_blank" class="btn-action support-link">DM @v2trueh7ven</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
