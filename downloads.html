@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>v2true | Hub</title>
+    <!-- Loads clean, premium icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
             margin: 0;
@@ -11,108 +13,118 @@
             box-sizing: border-box;
         }
         body {
-            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            background: linear-gradient(135deg, #070707, #1c1712, #0d0b09);
             color: #ffffff;
-            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 30px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .container {
             width: 100%;
-            max-width: 700px;
+            max-width: 550px; /* Shrunk width to fix ugly grey/black spaces */
             animation: fadeIn 0.8s ease;
         }
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .back-link {
-            color: #aaaaaa;
+            color: #bfae99;
             text-decoration: none;
             font-size: 0.9rem;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             margin-bottom: 15px;
             transition: color 0.2s;
         }
         .back-link:hover {
-            color: #ffffff;
+            color: #d4af37;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, #ff007f, #8a2be2);
+            font-size: 2.3rem;
+            margin-bottom: 8px;
+            background: linear-gradient(45deg, #ffffff, #d4af37);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+        .header p {
+            color: #8c8275;
+            font-size: 0.95rem;
         }
         .section-title {
-            font-size: 1.5rem;
-            margin: 35px 0 15px 0;
-            padding-bottom: 8px;
-            border-bottom: 2px solid rgba(255,255,255,0.1);
-            color: #f0f0f0;
+            font-size: 1.25rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            color: #d4af37;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        @media (max-width: 600px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
+            grid-template-columns: 1fr; /* Compacted into single sleek column format */
+            gap: 15px;
         }
         .card {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 14px;
+            background: rgba(15, 13, 11, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
             padding: 20px;
             backdrop-filter: blur(10px);
             display: flex;
-            flex-direction: column;
+            align-items: center;
             justify-content: space-between;
+            gap: 20px;
             transition: transform 0.2s, border-color 0.2s;
         }
         .card:hover {
-            transform: translateY(-3px);
-            border-color: #8a2be2;
+            transform: translateY(-2px);
+            border-color: #d4af37;
+        }
+        .card-info {
+            flex-grow: 1;
         }
         .card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+            color: #ffffff;
         }
         .card p {
-            color: #aaaaaa;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-            flex-grow: 1;
+            color: #8c8275;
+            font-size: 0.85rem;
         }
         .btn-action {
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.9rem;
-            text-align: center;
-            padding: 10px;
-            border-radius: 8px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            padding: 10px 16px;
+            border-radius: 10px;
             transition: all 0.2s;
         }
         .support-link {
-            background: #5865F2;
-            color: #ffffff;
+            background: #ffffff;
+            color: #000000;
         }
         .support-link:hover {
-            background: #4752C4;
+            background: #d4af37;
+            color: #ffffff;
         }
         .coming-soon {
-            background: rgba(255,255,255,0.05);
-            color: #777777;
-            border: 1px dashed rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.02);
+            color: #555555;
+            border: 1px dashed rgba(255,255,255,0.1);
             cursor: not-allowed;
         }
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
+            from { opacity: 0; transform: translateY(15px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -121,74 +133,53 @@
 
     <div class="container">
         <div class="header">
-            <a href="index.html" class="back-link">← Back to Links</a>
+            <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Links</a>
             <h1>v2true Hub</h1>
-            <p>Grab custom assets, view guides, or get direct help</p>
+            <p>Premium workspace assets, content guides, and connect lines</p>
         </div>
 
         <!-- SECTION 1: AFTER EFFECTS PRESETS -->
-        <h2 class="section-title">✨ After Effects Presets</h2>
+        <h2 class="section-title"><i class="fa-solid fa-wand-magic-sparkles"></i> AE Presets</h2>
         <div class="grid">
-            
             <div class="card">
-                <div>
-                    <h3>AE Project Presets</h3>
-                    <p>Custom editing templates, transitions, and lookups currently cooking behind the scenes.</p>
+                <div class="card-info">
+                    <h3>Project Presets</h3>
+                    <p>Custom design templates and layout curves currently tracking behind scenes.</p>
                 </div>
                 <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
             </div>
-
-            <div class="card">
-                <div>
-                    <h3>Visual Assets</h3>
-                    <p>Clean text designs, overlays, and asset packs ready to push your video quality higher.</p>
-                </div>
-                <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
-            </div>
-
         </div>
 
         <!-- SECTION 2: YOUTUBE TUTORIALS -->
-        <h2 class="section-title">📺 Video Tutorials</h2>
+        <h2 class="section-title"><i class="fa-brands fa-youtube"></i> Video Guides</h2>
         <div class="grid">
-            
             <div class="card">
-                <div>
+                <div class="card-info">
                     <h3>Editing Breakdowns</h3>
-                    <p>Step-by-step guides showing how to use advanced plugins, values, and flow curves.</p>
+                    <p>Step breakdowns managing advanced plugins, flow keyframes, and values.</p>
                 </div>
                 <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
             </div>
-
-            <div class="card">
-                <div>
-                    <h3>Roblox Walkthroughs</h3>
-                    <p>Deep-dives into game creation mechanics, design structures, and setup tips.</p>
-                </div>
-                <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
-            </div>
-
         </div>
 
         <!-- SECTION 3: SUPPORT & COMMUNITY -->
-        <h2 class="section-title">💬 Support & Connect</h2>
+        <h2 class="section-title"><i class="fa-solid fa-circle-nodes"></i> Support & Connect</h2>
         <div class="grid">
             
             <!-- Direct Profile DM -->
             <div class="card">
-                <div>
+                <div class="card-info">
                     <h3>Direct DM Support</h3>
-                    <p>Have questions about editing or creation workflows? Drop a line directly in my DMs.</p>
+                    <p>Have questions? Reach out directly via personal text dashboard layout lines.</p>
                 </div>
-                <!-- ID deep link loads your unique user card profile immediately -->
-                <a href="https://discord.com" target="_blank" class="btn-action support-link">DM @v2trueh7ven</a>
+                <a href="https://discord.com" target="_blank" class="btn-action support-link"><i class="fa-solid fa-comment"></i> DM @v2trueh7ven</a>
             </div>
 
             <!-- New Server Card Placeholder -->
             <div class="card">
-                <div>
-                    <h3>Official Discord Server</h3>
-                    <p>A fresh community hub workspace for video editors and creators is currently launching soon.</p>
+                <div class="card-info">
+                    <h3>Vogue Discord Server</h3>
+                    <p>A fresh community workspace hub for high-end video editors is launching here soon.</p>
                 </div>
                 <a href="#" onclick="return false;" class="btn-action coming-soon">Coming Soon</a>
             </div>
