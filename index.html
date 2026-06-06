@@ -1,94 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>v2true | Portfolio</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>v2true | Portfolio</title>
 
-        .profile-container {
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-        }
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
-        p {
-            color: #aaa;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
+/* container */
+.profile-container {
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    animation: fadeIn 1s ease;
+}
 
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
+/* text */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
 
-        .btn {
-            display: block;
-            text-align: center;
-            padding: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            border-radius: 12px;
-            transition: all 0.2s ease-in-out;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
+p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
 
-        .btn:hover {
-            transform: translateY(-3px);
-        }
+/* buttons */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-        .discord {
-            background-color: #5865F2;
-            color: #ffffff;
-        }
-        .discord:hover {
-            background-color: #4752C4;
-            box-shadow: 0 6px 20px rgba(88, 101, 242, 0.4);
-        }
+.btn {
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s;
+    display: block;
+}
 
-        .tiktok {
-            background-color: #000000;
-            color: #ffffff;
-            border: 2px solid #FE2C55;
-        }
-        .tiktok:hover {
-            background-color: #FE2C55;
-            box-shadow: 0 6px 20px rgba(254, 44, 85, 0.4);
-        }
-    </style>
+/* TikTok */
+.tiktok {
+    background: black;
+    border: 2px solid #FE2C55;
+}
+.tiktok:hover {
+    background: #FE2C55;
+    transform: scale(1.05);
+}
+
+/* Discord */
+.discord {
+    background: #5865F2;
+}
+.discord:hover {
+    background: #4752C4;
+    transform: scale(1.05);
+}
+
+/* animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* mobile fix */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="profile-container">
-        <h1>v2true</h1>
-        <p>After Effects Editor & Roblox Creator</p>
+<div class="profile-container">
+    <h1>v2true</h1>
+    <p>After Effects Editor & Roblox Creator</p>
 
-        <div class="links-container">
-            <a href="#" target="_blank" class="btn tiktok">Follow my TikTok</a>
-            <a href="#" target="_blank" class="btn discord">Join the Discord Server</a>
-        </div>
+    <div class="links-container">
+        <a href="https://tiktok.com/@YOURUSERNAME" target="_blank" class="btn tiktok">
+            Follow my TikTok
+        </a>
+
+        <a href="https://discord.gg/YOURINVITE" target="_blank" class="btn discord">
+            Join the Discord Server
+        </a>
     </div>
+</div>
 
 </body>
 </html>
